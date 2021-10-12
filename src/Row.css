@@ -1,0 +1,74 @@
+.row {
+  margin-top: 40px;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+}
+
+.row h2 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 20px;
+}
+.row__posters {
+  display: flex;
+  /* justify-content: space-evenly; */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 480ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* controllers  */
+
+.swiper-button-prev,
+.swiper-button-next {
+  /* border: 1px solid yellow; */
+  height: 100%;
+  position: absolute;
+  top: 20px;
+  background-color: #181818;
+}
+.swiper-button-prev {
+  box-shadow: 5px -2px 40px 40px #181818;
+  left: 0;
+}
+.swiper-button-next {
+  box-shadow: -5px 2px 40px 40px #181818;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 0.9rem;
+  color: #e50914;
+  font-weight: bold;
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
